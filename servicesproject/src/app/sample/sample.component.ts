@@ -11,6 +11,7 @@ export class SampleComponent implements OnInit {
   constructor(private firstService: FirstService) { }
   add1 = 3;
   add2 = 5;
+  addSum: number;
 
 
   ngOnInit() {
@@ -18,8 +19,7 @@ export class SampleComponent implements OnInit {
   }
 
   addNumbers(num1: number, num2: number) {
-    let sum;
-    sum = this.firstService.add(num1, num2);
-    console.log(sum);
+    this.addSum = this.firstService.add(num1, num2);
+    console.log(this.addSum);
   }
 }
