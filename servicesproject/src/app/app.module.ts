@@ -7,6 +7,8 @@ import { SampleComponent } from './sample/sample.component';
 import { FirstService } from './first.service';
 import { HttpService } from './http.service';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http'; 
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [FirstService, HttpService],
   bootstrap: [AppComponent]
