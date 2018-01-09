@@ -1,5 +1,5 @@
+import { FirstService } from './../first.service';
 import { Component, OnInit } from '@angular/core';
-import { FirstService } from '../first.service';
 
 @Component({
   selector: 'app-sample',
@@ -7,6 +7,8 @@ import { FirstService } from '../first.service';
   styleUrls: ['./sample.component.css']
 })
 export class SampleComponent implements OnInit {
+
+
 
   constructor(private firstService: FirstService) { }
   add1 = 3;
@@ -22,4 +24,4 @@ export class SampleComponent implements OnInit {
     this.addSum = this.firstService.add(num1, num2);
     console.log(this.addSum);
   }
-}
+  }

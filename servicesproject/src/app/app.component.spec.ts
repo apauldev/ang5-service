@@ -1,13 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
+import {RouterTestingModule} from '@angular/router/testing';
+import { FirstService } from './first.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
       declarations: [
-        AppComponent, SampleComponent
+        AppComponent,
+        SampleComponent
       ],
+      providers: [FirstService]
     }).compileComponents();
   }));
   it('should create the app', async(() => {

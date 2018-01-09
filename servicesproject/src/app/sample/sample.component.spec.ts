@@ -1,3 +1,4 @@
+import { FirstService } from './../first.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SampleComponent } from './sample.component';
@@ -8,7 +9,8 @@ describe('SampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SampleComponent ]
+      declarations: [ SampleComponent ],
+      providers: [FirstService]
     })
     .compileComponents();
   }));

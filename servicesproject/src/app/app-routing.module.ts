@@ -5,7 +5,7 @@ import { SampleComponent } from './sample/sample.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: 'sample', pathMatch: 'full' },
   { path: 'sample', component: SampleComponent }
 ];
 
